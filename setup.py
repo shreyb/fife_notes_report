@@ -15,7 +15,8 @@ setup(name='gracc-reporting',
       author='Shreyas Bhat',
       url='https://github.com/opensciencegrid/gracc-reporting',
       package_dir={'': 'src'},
-      packages=['graccreports', 'graccreports.fife_reports', 'graccreports.osg_reports', 'graccreports.minerva_report'],
+      packages=['graccreports', 'graccreports.fife_reports', 'graccreports.osg_reports', 'graccreports.minerva_report',
+                'graccreports.fife_notes_reports'],
       include_package_data=True,
       entry_points= {
           'console_scripts': [
@@ -29,7 +30,8 @@ setup(name='gracc-reporting',
               'osgtopoppusagereport = graccreports.osg_reports.TopOppUsageByFacility:main',
               'osgmissingprojects = graccreports.osg_reports.MissingProject:main',
               'copyfiles = graccreports.copyfiles:main',
-              'minervareport = graccreports.minerva_report.MinervaReport:main'
+              'minervareport = graccreports.minerva_report.MinervaReport:main',
+              'topnonprodusers = graccreports.fife_notes_reports.topnonprodusers:main'
             ]
       }
       )
