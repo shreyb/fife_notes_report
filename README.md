@@ -3,7 +3,7 @@ Note:
 This adds onto the [gracc-reporting package.](https://github.com/opensciencegrid/gracc-reporting)
 
 I've added a fife_notes subpackage, along with a report:
-    - Top Non-Production Users 
+- Top Non-Production Users 
     
 and its associated README.
 
