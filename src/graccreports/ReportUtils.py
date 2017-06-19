@@ -61,7 +61,6 @@ class Reporter(TimeUtils):
     def __init__(self, report, config, start, end=None, verbose=False,
                  raw=False, allraw=False, template=None, is_test=False, no_email=False,
                  title=None, logfile=None, logfile_override=False, check_vo=False):
-
         TimeUtils.__init__(self)
         self.header = []
         if config:
